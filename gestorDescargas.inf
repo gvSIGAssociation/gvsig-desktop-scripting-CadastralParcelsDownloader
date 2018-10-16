@@ -1,0 +1,14 @@
+[script]
+enable = true
+
+[Unit]
+type = Script
+name = gestorDescargas
+description = 
+createdBy = 
+version = 
+
+[Script]
+main = main
+Lang = python
+
