@@ -60,7 +60,7 @@ class CatastroDownloadManager():
       total_size = int(f.headers["Content-Length"])
       MB_size = round(total_size/1048576, 2)
       block_size = 1024 * 1024
-      outputPathFull=os.path.join(self.getDownloadPath(),value+".zip")
+      outputPathFull=os.path.join(self.getDownloadPath(),value+".gml")
       with open(outputPathFull, "wb") as file:
         while True:
           block = f.read(block_size)
@@ -120,10 +120,6 @@ def main(*args):
 
     s = CatastroDownloadManager()
     print s.getDownloadPath()
-    href="https://scihub.copernicus.eu/dhus/odata/v1/Products('7919ceec-c117-4ebe-b26a-2d4a6cdf1b63')/$value"
-    #S1B_IW_OCN__2SDV_20180927T052051_20180927T052116_012896_017D0E_CADC</title>
-    #href="https://scihub.copernicus.eu/dhus/odata/v1/Products('38e63505-0153-4ae1-8f5a-9c244a1bdb30')/$value"
+    href="http://ovc.catastro.meh.es/INSPIRE/wfsCP.aspx?service=wfs&request=getfeature&Typenames=cp.cadastralparcel&SRSname=EPSG::25830&bbox=233673,4015968,233761,4016008"
     s.addDownload("S1", href)
-    #s.addDownload("S2", href)
-    #s.addDownload("S3", href)
-    #(1224.0/1673.0 MB)  Downloading..S2A_OPER_PRD_MSIL1C_PDMC_20151223T101422_R046_V20151223T025004_20151223T025004
+    
