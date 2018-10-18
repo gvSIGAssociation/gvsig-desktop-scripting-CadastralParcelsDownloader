@@ -1,11 +1,11 @@
 #
-#Thu Oct 18 13:27:47 CEST 2018
+#Thu Oct 18 13:35:59 CEST 2018
 owner=gvSIG Association
 code=CadastralParcelsDownloader
 java-version=j1_7
 official=true
 type=Script
-version=1.0.0-0
+version=1.0.0-1
 state=testing
 operating-system=all
 dependencies=
@@ -16,6 +16,6 @@ model-version=1.0.1
 categories=
 description=Download Cadastral Parcels from Municipalities in Spain
 owner-url=
-buildNumber=0
-gvSIG-version=3.0.0
+buildNumber=1
+gvSIG-version=2.4.0
 name=CadastralParcelsDownloader
