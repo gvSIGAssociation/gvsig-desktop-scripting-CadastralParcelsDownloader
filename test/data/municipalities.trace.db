@@ -1,0 +1,9 @@
+2018-10-18 12:12:28 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "SPATIAL_REF_SYS" not found; SQL statement:
+SELECT TOP 1 SRID FROM SPATIAL_REF_SYS [42102-188]
+2018-10-18 12:12:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Muni') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 12:12:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "Muni" not found; SQL statement:
+SELECT * FROM "Muni" LIMIT 1 [42102-188]

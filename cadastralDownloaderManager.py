@@ -50,6 +50,7 @@ class CadastralDownloaderManager():
     self.downloaded={}
     self.working=False
     self.stopThread=False
+    print "***done manager"
     
   def getDownloaded(self):
     return self.downloaded
@@ -106,10 +107,10 @@ class CadastralDownloaderManager():
     self.downloadList.pop(value)
     self.downloaded[value]=url
     self.setWorking(False)
+    
     self.loadFileIntoH2(oml, outputPathFull)
 
   def loadFileIntoH2(self, oml, outputPathFull):
-    print "done"
     path=gvsig.getTempFile(oml.getCodMun(),'')#os.path.join(self.getDownloadPath(),oml.get)
     print "PATH FOR GML:", path
     os.mkdir(path)
@@ -129,16 +130,16 @@ class CadastralDownloaderManager():
     #storeParameters.setDynValue("defaultGeometryField",None)
     storeParameters.setDynValue("file",gmlFilePath)
     #storeParameters.setDynValue("gfsSchema",None)
-    storeParameters.setDynValue("ignoreSpatialFilter",True)
+    #storeParameters.setDynValue("ignoreSpatialFilter",True)
     storeParameters.setDynValue("layerName",oml.getCodMun())
     #storeParameters.setDynValue("ProviderName",None)
     #storeParameters.setDynValue("xsdSchema",None)
-    store = manager.openStore("GMLDataStoreProvider",storeParameters)
+    storeGML = manager.openStore("GMLDataStoreProvider",storeParameters)
     
-    application = ApplicationLocator.getManager()
-    mapcontextmanager = application.getMapContextManager()
-    layer = mapcontextmanager.createLayer(oml.getId(),store)
-    self.view.addLayer(layer)
+    #application = ApplicationLocator.getManager()
+    #mapcontextmanager = application.getMapContextManager()
+    #layer = mapcontextmanager.createLayer(oml.getId(),store)
+    #self.view.addLayer(layer)
 
     # Open Store
     storeParameters = manager.createStoreParameters("H2Spatial")
@@ -147,7 +148,9 @@ class CadastralDownloaderManager():
     storeParameters.setDynValue("Table","Muni")
     storeH2 = manager.openStore("H2Spatial",storeParameters)
     storeH2.edit()
-    for f in store:
+    fsetGML = storeGML.getFeatureSet()
+
+    for f in fsetGML:
       value = {
         'CODPROV': oml.getCodProv(),
         'PROV': oml.getProv(),
@@ -159,6 +162,9 @@ class CadastralDownloaderManager():
         }
       storeH2.append(value)
     storeH2.commit()
+
+    storeGML.dispose()
+    storeH2.dispose()
   
     
   def setWorking(self, state=None):

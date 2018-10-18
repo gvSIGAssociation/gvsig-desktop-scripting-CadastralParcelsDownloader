@@ -6,11 +6,12 @@ from gvsig.libs.formpanel import FormPanel
 #import dataCatastro
 #reload(dataCatastro)
 
-from dataCatastro import getProvinciasFeatureSet, getMunicipiosFeatureSet
+from dataCatastro import getProvinciasFeatureSet, getMunicipiosFeatureSet, getMunicipalitiesParcelsFeatureSet
 from org.gvsig.fmap.dal import DALLocator
 from cadastralDownloaderManager import CadastralDownloaderManager
 from java.lang import Object
 from javax.swing.table import DefaultTableModel
+
 class ObjectListProvince(Object):
   def __init__(self, province, cod):
     self.province = province
@@ -39,25 +40,37 @@ class ObjectListMunicipality(Object):
     return self.id
   def toString(self):
     return self.mun
-    
+
+
 class CadastralDownloaderPanel(FormPanel):
   def __init__(self):
     FormPanel.__init__(self, gvsig.getResource(__file__, "CadastralParcels.xml"))
     self.dm = CadastralDownloaderManager(gvsig.currentView(), self)
-    fset = getProvinciasFeatureSet()
-    for provincia in fset:
-      p = provincia.get("PROVINCIA")#.encode("utf-8")
-      v = provincia.get("CODIGO")
-      prv = ObjectListProvince(p, v)
-      self.cboProvinces.addItem(prv)
     #self.cboProvinces.setSelectedIndex(5)
     # Tabla
+    self.updateProvincia()
     model = self.tblMunicipalities.getModel()
     model.addColumn("Municipio")
     model.addColumn("Codigo")
     model.addColumn("Fecha")
     self.updateTable()
 
+  def updateProvincia(self):
+    manager = DALLocator.getDataManager()
+    storeParameters = manager.createStoreParameters("H2Spatial")
+    database_file = gvsig.getResource(__file__,"data","catastroInfo.mv.db")
+    storeParameters.setDynValue("database_file",database_file)
+    storeParameters.setDynValue("Table","Provincias")
+    store = manager.openStore("H2Spatial",storeParameters)
+    featureSet = store.getFeatureSet()
+    fset, store = getProvinciasFeatureSet()
+    for provincia in fset:
+      p = provincia.get("PROVINCIA")#.encode("utf-8")
+      v = provincia.get("CODIGO")
+      prv = ObjectListProvince(p, v)
+      self.cboProvinces.addItem(prv)
+    store.dispose()
+    
   def updateTable(self):
     model = DefaultTableModel() #self.tblMunicipalities.getModel()
     manager = DALLocator.getDataManager()
@@ -75,7 +88,7 @@ class CadastralDownloaderPanel(FormPanel):
           muns[f.get("CODMUN")] = [f.get("MUN"),f.get("CODMUN"),'']
     for k in muns.keys():
       model.addRow(muns[k])
-
+    storeH2.dispose()
     self.tblMunicipalities.setModel(model)
 
   def btnUpdateMunicipality(self,*args):
@@ -84,21 +97,27 @@ class CadastralDownloaderPanel(FormPanel):
   def cboProvinces_change(self, *args):
     selected = self.cboProvinces.getSelectedItem()
     enc = selected.getCode()#.decode('utf-8')
-    if True: #try
+    try:
       self.cboMunicipalities.removeAllItems()
-      fset = getMunicipiosFeatureSet(enc)
+      fset, store = getMunicipiosFeatureSet(enc)
       for f in fset:
         itemM = ObjectListMunicipality(f)
         if f.get("CODPROV")==enc:
           self.cboMunicipalities.addItem(itemM)
-    #except:
-    #  self.cboMunicipalities.addItem("---")
+      store.dispose()
+    except:
+      self.cboMunicipalities.addItem("---")
+      store.dispose()
   def btnDownloadMunicipality_click(self, *args):
     #province = self.cboProvinces.getSelectedItem()
     municipality = self.cboMunicipalities.getSelectedItem()
     url = self.dm.getCadastralLink(municipality)
     self.dm.addDownload(municipality.getCodMun(), url, municipality)
-    
+  def btnLoadSelected_click(self, *args):
+    row = self.tblMunicipalities.getSelectedRow()
+    value = self.tblMunicipalities.getValueAt(row, 1)
+    getMunicipalitiesParcelsFeatureSet(value)
+    print value
     
 def main(*args):
     l = CadastralDownloaderPanel()

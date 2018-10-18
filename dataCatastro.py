@@ -18,6 +18,7 @@ def main(*args):
   #a = getMunicipiosFeatureSet(u"A CORUÑA")
   #createNewDataBaseBasicPronviciasMunicipios()
   #createNewEmptyMunicipalities()
+  getMunicipalitiesParcelsFeatureSet("05005")
   pass
   
 def getProvinciasFeatureSet():
@@ -28,8 +29,10 @@ def getProvinciasFeatureSet():
   storeParameters.setDynValue("Table","Provincias")
   
   store = manager.openStore("H2Spatial",storeParameters)
+  print "*** GETTING FEATURE SET"""
   featureSet = store.getFeatureSet()
-  return featureSet
+  print "*** YE FEATURE SET"
+  return featureSet, store
   
 def getMunicipiosFeatureSet(provincia):
   manager = DALLocator.getDataManager()
@@ -39,11 +42,33 @@ def getMunicipiosFeatureSet(provincia):
   storeParameters.setDynValue("Table","Municipios")
   
   store = manager.openStore("H2Spatial",storeParameters)
-  #try:  query = u"""CODPROV='{0}'""".format(provincia)
+  #try:  
+  #  query = u"""CODPROV='{0}'""".format(provincia)
   #  featureSet = store.getFeatureSet(query)
   #except:
   featureSet = store.getFeatureSet()
-  return featureSet
+  return featureSet, store
+  
+def getMunicipalitiesParcelsFeatureSet(codmuni):
+  manager = DALLocator.getDataManager()
+  storeParameters = manager.createStoreParameters("H2Spatial")
+  database_file = gvsig.getResource(__file__,"data","municipalities.mv.db")
+  storeParameters.setDynValue("database_file",database_file)
+  storeParameters.setDynValue("Table","Muni")
+  storeParameters.setDynValue("SQL","""SELECT * FROM "Muni" WHERE CODMUN='{0}'""".format(codmuni));
+  store = manager.openStore("H2Spatial",storeParameters)
+  #try:  
+  #  query = u"""CODMUN='{0}'""".format(codmuni)
+  #  featureSet = store.getFeatureSet(query)
+  #except:
+  #  return None
+  application = ApplicationLocator.getManager()
+  mapcontextmanager = application.getMapContextManager()
+  layer = mapcontextmanager.createLayer(codmuni,store)
+  gvsig.currentView().addLayer(layer)
+  store.dispose()
+  #return featureSet, store
+  
   
 def createNewEmptyMunicipalities():
   database_file = gvsig.getTempFile("/home/osc/temp/h2/municipalities",".mv.db")

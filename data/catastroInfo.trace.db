@@ -322,3 +322,129 @@ SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraint
 2018-10-18 05:20:29 jdbc[9]: exception
 org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
 SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Municipios') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 05:22:48 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Provincias') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 05:22:48 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Municipios') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 05:25:24 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Provincias') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 05:25:25 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Municipios') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 05:28:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Provincias') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 05:28:29 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Municipios') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 12:16:32 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Provincias') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 12:16:32 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Municipios') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 12:17:20 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Provincias') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 12:17:39 jdbc[9]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Provincias') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 12:19:18 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Provincias') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 12:20:22 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Provincias') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 12:22:51 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Provincias') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 12:24:54 jdbc[17]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Provincias') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 12:24:54 jdbc[19]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Provincias') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 12:32:05 jdbc[21]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Provincias') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 12:32:05 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Provincias') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 12:38:05 jdbc[25]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Provincias') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 12:38:05 jdbc[27]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Provincias') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 12:38:05 jdbc[29]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Municipios') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 12:38:11 jdbc[31]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Municipios') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 12:38:11 jdbc[33]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Municipios') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 12:42:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Provincias') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 12:42:45 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Provincias') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 12:42:45 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Municipios') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 12:46:55 jdbc[9]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Provincias') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 12:46:55 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Provincias') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 12:46:55 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Municipios') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 12:47:05 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Municipios') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 12:47:05 jdbc[17]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Municipios') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 12:50:28 jdbc[19]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Provincias') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 12:50:28 jdbc[21]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Provincias') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 12:50:29 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Municipios') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 13:07:19 jdbc[25]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Provincias') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 13:07:19 jdbc[27]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Provincias') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 13:07:19 jdbc[29]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Municipios') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 13:22:41 jdbc[31]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Provincias') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 13:22:41 jdbc[33]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Provincias') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 13:22:41 jdbc[35]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Municipios') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 13:23:47 jdbc[37]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Provincias') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 13:23:48 jdbc[39]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Provincias') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 13:23:48 jdbc[41]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Municipios') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]

@@ -58,3 +58,209 @@ SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraint
 2018-10-18 05:20:29 jdbc[5]: exception
 org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
 SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Muni') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 05:22:48 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Muni') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 05:23:22 jdbc[9]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Muni') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 05:25:25 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Muni') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 05:25:46 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Muni') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 05:28:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Muni') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 05:28:50 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Muni') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 12:13:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Muni') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 12:14:03 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Muni') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 12:16:32 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Muni') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 12:17:20 jdbc[9]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Muni') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 12:32:05 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Muni') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 12:38:06 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Muni') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 12:38:18 jdbc[15]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Muni') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 12:42:46 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Muni') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 12:46:56 jdbc[5]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Muni') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 12:47:09 jdbc[7]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Muni') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 12:48:10 jdbc[9]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-188]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:118)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:91)
+	at org.h2.Driver.connect(Driver.java:72)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:735)
+	at org.h2.server.web.WebApp.login(WebApp.java:955)
+	at org.h2.server.web.WebApp.process(WebApp.java:211)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:170)
+	at org.h2.server.web.WebThread.process(WebThread.java:133)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-188]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 14 more
+2018-10-18 12:48:10 jdbc[9]: null
+org.h2.message.DbException: The connection was not closed by the application and is garbage collected [90018-188]
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.message.DbException.get(DbException.java:144)
+	at org.h2.jdbc.JdbcConnection.closeOld(JdbcConnection.java:173)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:118)
+	at org.h2.jdbc.JdbcConnection.<init>(JdbcConnection.java:91)
+	at org.h2.Driver.connect(Driver.java:72)
+	at org.h2.server.web.WebServer.getConnection(WebServer.java:735)
+	at org.h2.server.web.WebApp.login(WebApp.java:955)
+	at org.h2.server.web.WebApp.process(WebApp.java:211)
+	at org.h2.server.web.WebApp.processRequest(WebApp.java:170)
+	at org.h2.server.web.WebThread.process(WebThread.java:133)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:745)
+Caused by: org.h2.jdbc.JdbcSQLException: The connection was not closed by the application and is garbage collected [90018-188]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	... 14 more
+2018-10-18 12:49:30 jdbc[9]: exception
+org.h2.jdbc.JdbcSQLException: Column "ALBACETE" not found; SQL statement:
+SELECT * FROM "Muni" WHERE PROV="ALBACETE" [42122-188]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:147)
+	at org.h2.expression.Comparison.optimize(Comparison.java:180)
+	at org.h2.command.dml.Select.prepare(Select.java:838)
+	at org.h2.command.Parser.prepareCommand(Parser.java:246)
+	at org.h2.engine.Session.prepareLocal(Session.java:461)
+	at org.h2.engine.Session.prepareCommand(Session.java:403)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1188)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:170)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:158)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1388)
+	at org.h2.server.web.WebApp.query(WebApp.java:1061)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1023)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1010)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:745)
+2018-10-18 12:50:29 jdbc[11]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Muni') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 13:07:19 jdbc[13]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Muni') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 13:14:43 jdbc[16]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Muni') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 13:16:32 jdbc[18]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Muni') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 13:16:32 jdbc[18]: exception
+org.h2.jdbc.JdbcSQLException: Table "MUNI" not found; SQL statement:
+SELECT NVL2(ST_Extent("GEOMETRY"), ST_AsBinary(ST_Extent("GEOMETRY")), null) FROM ( SELECT * FROM MUNI WHERE CODMUN=05) as _subquery_alias_  [42102-188]
+2018-10-18 13:16:43 jdbc[18]: exception
+org.h2.jdbc.JdbcSQLException: Table "MUNI" not found; SQL statement:
+SELECT * FROM ( SELECT * FROM MUNI WHERE CODMUN=05) as _subquery_alias_  LIMIT 1 [42102-188]
+2018-10-18 13:17:01 jdbc[20]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Muni') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 13:18:05 jdbc[21]: exception
+org.h2.jdbc.JdbcSQLException: Column "05" not found; SQL statement:
+SELECT * FROM "Muni" WHERE CODMUN ="05" [42122-188]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:147)
+	at org.h2.expression.Comparison.optimize(Comparison.java:180)
+	at org.h2.command.dml.Select.prepare(Select.java:838)
+	at org.h2.command.Parser.prepareCommand(Parser.java:246)
+	at org.h2.engine.Session.prepareLocal(Session.java:461)
+	at org.h2.engine.Session.prepareCommand(Session.java:403)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1188)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:170)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:158)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1388)
+	at org.h2.server.web.WebApp.query(WebApp.java:1061)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1023)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1010)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:745)
+2018-10-18 13:19:01 jdbc[21]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "SELECT * FROM ""Muni"" WHERE CODMUN='05005':[*]"; SQL statement:
+SELECT * FROM "Muni" WHERE CODMUN='05005': [42000-188]
+2018-10-18 13:19:45 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Muni') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 13:19:45 jdbc[23]: exception
+org.h2.jdbc.JdbcSQLException: Table "MUNI" not found; SQL statement:
+SELECT NVL2(ST_Extent("GEOMETRY"), ST_AsBinary(ST_Extent("GEOMETRY")), null) FROM ( SELECT * FROM MUNI WHERE CODMUN='05005') as _subquery_alias_  [42102-188]
+2018-10-18 13:20:55 jdbc[24]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "SELECT * FROM 'Muni'[*] WHERE CODMUN='05005'"; expected "identifier"; SQL statement:
+SELECT * FROM 'Muni' WHERE CODMUN='05005' [42001-188]
+2018-10-18 13:20:56 jdbc[24]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "SELECT * FROM 'Muni'[*] WHERE CODMUN='05005'"; expected "identifier"; SQL statement:
+SELECT * FROM 'Muni' WHERE CODMUN='05005' [42001-188]
+2018-10-18 13:21:23 jdbc[24]: exception
+org.h2.jdbc.JdbcSQLException: Column "05005" not found; SQL statement:
+SELECT * FROM "Muni" WHERE CODMUN="05005" [42122-188]
+	at org.h2.message.DbException.getJdbcSQLException(DbException.java:345)
+	at org.h2.message.DbException.get(DbException.java:179)
+	at org.h2.message.DbException.get(DbException.java:155)
+	at org.h2.expression.ExpressionColumn.optimize(ExpressionColumn.java:147)
+	at org.h2.expression.Comparison.optimize(Comparison.java:180)
+	at org.h2.command.dml.Select.prepare(Select.java:838)
+	at org.h2.command.Parser.prepareCommand(Parser.java:246)
+	at org.h2.engine.Session.prepareLocal(Session.java:461)
+	at org.h2.engine.Session.prepareCommand(Session.java:403)
+	at org.h2.jdbc.JdbcConnection.prepareCommand(JdbcConnection.java:1188)
+	at org.h2.jdbc.JdbcStatement.executeInternal(JdbcStatement.java:170)
+	at org.h2.jdbc.JdbcStatement.execute(JdbcStatement.java:158)
+	at org.h2.server.web.WebApp.getResult(WebApp.java:1388)
+	at org.h2.server.web.WebApp.query(WebApp.java:1061)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1023)
+	at org.h2.server.web.WebApp$1.next(WebApp.java:1010)
+	at org.h2.server.web.WebThread.process(WebThread.java:164)
+	at org.h2.server.web.WebThread.run(WebThread.java:89)
+	at java.lang.Thread.run(Thread.java:745)
+2018-10-18 13:21:47 jdbc[26]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Muni') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 13:22:20 jdbc[28]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Muni') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 13:22:42 jdbc[30]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Muni') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 13:23:48 jdbc[32]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Muni') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 13:23:54 jdbc[34]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Muni') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
+2018-10-18 13:23:58 jdbc[36]: exception
+org.h2.jdbc.JdbcSQLException: Table "TABLE_CONSTRAINTS" not found; SQL statement:
+SELECT "COLUMN_NAME", "CONSTRAINT_TYPE" FROM INFORMATION_SCHEMA.table_constraints t_cons inner join INFORMATION_SCHEMA.key_column_usage c on c.constraint_catalog = t_cons.constraint_catalog and c.table_schema = t_cons.table_schema and c.table_name = t_cons.table_name and c.constraint_name = t_cons.constraint_name  WHERE ( (c.TABLE_NAME) LIKE ('Muni') ) AND ( ("CONSTRAINT_TYPE") = ('PRIMARY KEY') ) [42102-188]
