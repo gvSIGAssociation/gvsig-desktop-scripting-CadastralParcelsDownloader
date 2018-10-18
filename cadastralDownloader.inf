@@ -3,7 +3,7 @@ enable = true
 
 [Unit]
 type = Script
-name = gestorDescargas
+name = cadastralDownloader
 description = 
 createdBy = 
 version = 

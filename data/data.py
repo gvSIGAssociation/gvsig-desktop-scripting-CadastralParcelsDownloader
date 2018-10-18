@@ -3,7 +3,7 @@
 import gvsig
 
 # http://ovc.catastro.meh.es/ovcservweb/OVCSWLocalizacionRC/OVCCallejero.asmx
-
+import csv
 import os
 import urllib2
 from xml.etree import ElementTree as ET
@@ -113,9 +113,28 @@ def getMunicipios(provincia):
   query = downloadXMLQuery(url)
   reader = xmlCatastroReader(query)
   return reader
-  
+
+def getMinucipalitiesFromCsv():
+  csvFilePath = gvsig.getResource(__file__,"dataMunicipalities.csv")
+  if not os.path.exists(csvFilePath):
+    print "not found"
+    return None
+  n = 0
+  print n
+  with open(csvFilePath, 'rb') as csvfile:
+   spamreader = csv.reader(csvfile, delimiter=',') #, quotechar='|')
+   for row in spamreader:
+     print row
+     for i in row:
+        print i.decode('utf-8')
+     print ', '.join(row)
+     n+=1
+     if n>20:
+       break
+  print n
 def main(*args):
-  print getProvincias()
-  print getMunicipios(u"A CORUÑA")
+  #print getProvincias()
+  #print getMunicipios(u"A CORUÑA")
+  getMinucipalitiesFromCsv()
 
   
