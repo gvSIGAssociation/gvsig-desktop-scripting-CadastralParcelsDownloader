@@ -55,7 +55,7 @@ def selfRegister():
   actionManager = PluginsLocator.getActionInfoManager()
   iconTheme = ToolsSwingLocator.getIconThemeManager().getCurrent()
 
-  cadastralparcelsdownloader_icon = File(join(dirname(__file__),"images","cadastralparcelsdownloader.png")).toURI().toURL()
+  cadastralparcelsdownloader_icon = File(gvsig.getResource(__file__,"images","cadastralparcelsdownloader.png")).toURI().toURL()
   iconTheme.registerDefault("scripting.cadastralparcelsdownloader", "action", "tools-cadastralparcelsdownloader", None, cadastralparcelsdownloader_icon)
 
   cadastralparcelsdownloader_extension = CadastralDownloaderExtension()
